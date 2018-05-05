@@ -1,0 +1,19 @@
+body{
+    background-color:black;
+}
+
+.jumbotron{
+    background-color:cyan;
+}
+
+.panel-heading{
+    font-weight:bold;
+}
+
+.form-group{
+    margin-left: 10px;
+}
+
+.btn{
+    margin-left: 10px;
+}

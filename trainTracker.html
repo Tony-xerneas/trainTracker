@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+
+
+</head>
+
+<body background-color="yellow">
+    <div class="container">
+        <div class="row-lg-9">
+            <div class="container text-center jumbotron">
+                <h1>Alola Train Tracker</h1>
+                <p>Can't turn back the clock. But you can wind it up again, know your train arrival!</p>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="row-lg-9">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Current Train Schedule</h3>
+                    </div>
+                    <div class="panel-body" id="recent-member">
+                        <h2 id="name-display"></h2>
+                        <h4 id="email-display"></h4>
+                        <h4 id="age-display"></h4>
+                        <p id="comment-display"></p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Train Name</th>
+                                    <th scope="col">Destination</th>
+                                    <th scope="col">Frequency (min)</th>
+                                    <th scope="col">Next Arrival</th>
+                                    <th scope="col">Minutes Away</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                        </table>
+                    </div>
+
+                </div>
+                <form>
+                    <div class="row-lg-9">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Add Train</div>
+                            <div class="form-group">
+                                <br>
+                                <label for="exampleInputEmail1">Train Name</label>
+                                <input type="text" id="train-input" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Destination</label>
+                                <input type="text" id="destination-input" class="form-control" placeholder="Destination">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">First Train Time (HH:MM; military time)</label>
+                                <input type="number" id="firstT-input" class="form-control" placeholder="First Train">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Frequency (min)</label>
+                                <input type="number" id="time-input" class="form-control" placeholder="Frequency">
+                            </div>
+                            <input class="btn btn-default" id="add-user" type="submit" value="Submit">
+                            <br>
+                        </div>
+                    </div>
+
+                    <!-- <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script> -->
+                    <script src="https://code.jquery.com/jquery.js"></script>
+                    <script src="assets/javascript/app.js"></script>
+
+                </form>
+
+            </div>
+        </div>
+
+</body>
+
+</html>
